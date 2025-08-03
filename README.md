@@ -12,16 +12,13 @@ Each `.py` file includes:
 - ✅ Problem name
 - ✅ Problem code in Python
 Example :
-    Arrays/
-  
-    two_sum.py
-  
-    max_subarray.py
 
-    Strings/
-  
-    reverse_string.py
-  
+    Arrays/ 
+    two_sum.py 
+    max_subarray.py 
+
+    Strings/ 
+    reverse_string.py 
     is_anagram.py
 
 ---
