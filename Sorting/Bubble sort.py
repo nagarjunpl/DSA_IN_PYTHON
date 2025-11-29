@@ -1,21 +1,17 @@
 class Solution:
-    def bubble_sort(self, lst):
-        has_swapped = True
-        # if no swap occurred, lst is sorted
-        while has_swapped:
-            has_swapped = False
-            for i in range(len(lst) - 1):
-                if lst[i] > lst[i + 1]:
-                    # Swap adjacent elements
-                    lst[i], lst[i + 1] = lst[i + 1], lst[i]
-                    has_swapped = True
+    def bubbleSort(self, nums):
+        n = len(nums)
+        
+        for i in range(n - 1):
+            for j in range(n - 1 - i):
+                if nums[j] > nums[j+1]:
+                    nums[j], nums[j+1] = nums[j+1], nums[j]
 
+        print(nums)
+        
 # Example usage
-arr = [64, 34, 25, 12, 22, 11, 90]
 sol = Solution()
-print("Original:", arr)
-sol.bubble_sort(arr)
-print("Sorted:", arr)
+sol.bubbleSort([64, 34, 25, 12, 22, 11, 90])
 
 
 
