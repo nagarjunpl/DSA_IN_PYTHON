@@ -13,19 +13,28 @@ Each `.py` file includes:
 - ✅ Problem code in Python
 Example :
 
-    Arrays/ 
-    two_sum.py 
-    max_subarray.py 
+    Arrays/
+  
+       two_sum.py
+  
+       max_subarray.py
+  
+       ...
 
-    Strings/ 
-    reverse_string.py 
-    is_anagram.py
-
+    Strings/
+  
+       reverse_string.py
+  
+       is_anagram.py
+  
+       ...
+    ...
 ---
 
 ## 🚀 Platforms Used
 
 Problems are solved from:
+- [Strivers-a2z-sheet](https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z)
 - [LeetCode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
