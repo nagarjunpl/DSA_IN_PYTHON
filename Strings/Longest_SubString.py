@@ -1,19 +1,17 @@
-class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        seen = set()
-        left = 0
-        max_length = 0
+def longestSubstring(s):
+    seen = set()
+    left = 0
+    max_len = 0
 
-        for right in range(len(s)):
-            # If character already seen, move left pointer
-            while s[right] in seen:
-                seen.remove(s[left])
-                left += 1
-            seen.add(s[right])
-            max_length = max(max_length, right - left + 1)
+    for right in range(len(s)):
+        while s[right] in seen:
+            seen.remove(s[left])
+            left += 1
 
-        return max_length
+        seen.add(s[right])
+        max_len = max(max_len, right - left + 1)
 
-  s = "abcabcbb"
-  n = Solution()
-  print(n.lengthOfLongestSubstring(s))
+    return max_len
+
+res = longestSubstring("abcabcbb")
+print(res)
