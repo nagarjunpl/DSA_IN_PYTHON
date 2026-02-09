@@ -1,18 +1,16 @@
-class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
-        # Start with the first string as the initial prefix
-        prefix = strs[0]
 
-        # Compare prefix with each word in the list (starting from the 2nd string)
-        for word in strs[1:]:
-            # Keep reducing the prefix until it matches the start of 'word'
-            while word.find(prefix) != 0:
-                # Remove the last character from prefix
-                prefix = prefix[:-1]
-                
-                # If prefix becomes empty, no common prefix exists
-                if not prefix:
-                    return ""
-        
-        # Return the longest common prefix found
-        return prefix
+def longestCommonPrefix(st):
+    pre = st[0]
+
+    for s in st[1:]:
+        while not s.startswith(pre):
+            pre = pre[:-1]
+            if pre == "":
+                return ""
+
+    return pre
+
+st1 = ["dog", "cat", "animal", "monkey"]
+st2 = ["flowers", "flow", "fly", "flight"]
+print(longestCommonPrefix(st1))
+print(longestCommonPrefix(st2))
