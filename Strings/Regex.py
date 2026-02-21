@@ -1,11 +1,9 @@
-# Function to check if string
-# starts and ends with 'gfg'
+# Function to check if string starts and ends with 'gfg'
 
 def gfg(S):
     b = S.lower()
-  
-    if (b[:3] == b[-3:]):
+    
+    if b.startswith("gfg") and b.endswith("gfg"):
         print("Yes")
-      
     else:
         print("No")
