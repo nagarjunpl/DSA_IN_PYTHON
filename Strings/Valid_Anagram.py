@@ -6,5 +6,7 @@ class Solution:
         for i in range(len(t)):
             if t[i] not in s:
                 return False
-                break
+            else:
+                s = s.replace(t[i], '', 1)   # it remove one occurrence in s
+        
         return True
