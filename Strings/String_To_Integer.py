@@ -12,3 +12,8 @@ class Solution:
             i += 1
 
         return num
+
+s = input("Enter a string: ")  # Enter a string: 4193 with words
+sol = Solution()
+result = sol.st_int(s)
+print("Converted Integer:", result)  # Converted Integer: 4193
