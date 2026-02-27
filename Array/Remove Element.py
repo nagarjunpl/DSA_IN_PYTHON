@@ -2,9 +2,9 @@ class Solution:
     def removeElement(self, nums, val):
         k = 0  # pointer for the position of the next valid element
         
-        for i in range(len(nums)):
-            if nums[i] != val:
-                nums[k] = nums[i]  # move valid element forward
+        for num in nums:
+            if num != val:
+                nums[k] = num
                 k += 1
         
         return k
