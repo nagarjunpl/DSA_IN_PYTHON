@@ -1,20 +1,22 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def inorderTraversal(self, root: TreeNode):
-        result, stack = [], []
-        curr = root
+# Define Tree Node
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left = None
+        self.right = None
 
-        while curr or stack:
-            while curr:              # Go left as far as possible
-                stack.append(curr)
-                curr = curr.left
-            curr = stack.pop()       # Process node
-            result.append(curr.val)
-            curr = curr.right        # Visit right subtree
+# Inorder function
+def inorder(root):
+    if root is None:
+        return
+    
+    inorder(root.left)
+    print(root.val, end=" ")
+    inorder(root.right)
 
-        return result
+root = TreeNode(6)
+root.left = TreeNode(4)
+root.right = TreeNode(1)
+
+print("Inorder Traversal:")
+inorder(root)
