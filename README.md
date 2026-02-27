@@ -13,22 +13,22 @@ Each `.py` file includes:
 - ✅ Problem code in Python
 Example :
 
-    Arrays/
+  ### Arrays Folder
   
-       two_sum.py
+  Array/two_sum.py
   
-       max_subarray.py
+  Array/max_subarray.py
   
-       ...
+  ...
 
-    Strings/
+  ### Strings Folder
   
-       reverse_string.py
+   Strings/reverse_string.py
+
+   Stringd/is_anagram.py
   
-       is_anagram.py
-  
-       ...
-    ...
+  ...
+    
 ---
 
 ## 🚀 Platforms Used
