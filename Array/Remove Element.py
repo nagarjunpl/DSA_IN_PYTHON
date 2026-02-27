@@ -11,8 +11,9 @@ class Solution:
         
 nums = [0, 1, 2, 2, 3, 0, 4, 2]
 val = 2
+
 obj = Solution()
 k = obj.removeElement(nums, val)
-print(k)      # 5
+print(k)      # 5 No. of elements not equal to val
 print(nums)   # [0, 1, 3, 0, 4, 0, 4, 2] -> first 5 elements correct
 
