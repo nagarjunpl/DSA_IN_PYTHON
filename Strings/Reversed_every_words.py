@@ -1,6 +1,15 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        words = s.split()
-        words.reverse()
-        return ' '.join(words)
+        st = s.split()
+        rev = []
+        for word in st:
+            rev.insert(0, word)
 
+        return " ".join(rev)
+
+s = "I love Python"
+obj = Solution()
+result = obj.reverseWords(s)
+
+print("Input :", s)
+print("Output:", result)
