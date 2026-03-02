@@ -10,6 +10,4 @@ class Solution:
 s = "I love Python"
 obj = Solution()
 result = obj.reverseWords(s)
-
-print("Input :", s)
-print("Output:", result)
+print("Output:", result) # Output: Python love I
