@@ -7,3 +7,8 @@ def gfg(S):
         print("Yes")
     else:
         print("No")
+
+S1 = "gfgHelloWorldgfg"
+S2 = "gfgpython"
+gfg(S1) # Output: Yes
+gfg(S2) # Output: No
