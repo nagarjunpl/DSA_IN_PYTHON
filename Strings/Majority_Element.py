@@ -9,7 +9,11 @@ class Solution:
 
             if num == candidate:
                 count += 1
-            else :
+            else:
                 count -= 1
                 
         return candidate
+
+nums = [2, 2, 1, 1, 1, 2, 2]
+obj = Solution()
+print(obj.majorityElement(nums)) # Output: 2
