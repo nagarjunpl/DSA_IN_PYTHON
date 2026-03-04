@@ -14,4 +14,4 @@ def printDuplicates(s):
         i += count
 
 s = "nagarjun p l"
-printDuplicates(s)
+printDuplicates(s) # Output : [' ', 2] ['a', 2] ['n', 2]
