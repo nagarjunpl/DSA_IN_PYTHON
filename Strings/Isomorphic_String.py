@@ -1,5 +1,5 @@
 class Solution:
-    def isomorphicString(self, s : str, t : str) -> bool:
+    def isomorphicString(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
 
@@ -10,14 +10,14 @@ class Solution:
             c1 = s[i]
             c2 = t[i]
 
-            # Check s->t mapping
+            # Check s -> t mapping
             if c1 in map_s:
                 if map_s[c1] != c2:
                     return False
             else:
                 map_s[c1] = c2
 
-            # Check t->s mapping
+            # Check t -> s mapping
             if c2 in map_t:
                 if map_t[c2] != c1:
                     return False
@@ -25,4 +25,8 @@ class Solution:
                 map_t[c2] = c1
         
         return True
-    
+
+s = "egg"
+t = "add"
+obj = Solution()
+print(obj.isomorphicString(s, t)) # Output: True
