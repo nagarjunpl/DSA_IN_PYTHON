@@ -5,3 +5,8 @@ class Solution:
                 return i
             
         return -1
+
+nums = [10, 20, 30, 40, 50]
+target = 30
+obj = Solution()
+print(obj.linearSearch(nums, target)) # Output: 2
