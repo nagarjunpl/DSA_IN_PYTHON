@@ -8,3 +8,7 @@ class Solution:
                 j += 1
 
         print(nums)
+
+nums = [0,1,0,3,12]
+sol = Solution()
+sol.moveZeroes(nums) # Output : [1, 3, 12, 0, 0]
