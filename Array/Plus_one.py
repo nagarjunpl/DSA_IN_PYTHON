@@ -7,5 +7,8 @@ class Solution:
                 return digits
             digits[i] = 0          # If digit == 9, set to 0 and carry over
         
-        # If we exit loop, all digits were 9
         return [1] + digits
+
+digits = [1,2,3]
+sol = Solution()
+print(sol.plusOne(digits)) # Output: [1, 2, 4]
