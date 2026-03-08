@@ -17,5 +17,10 @@ class Solution:
                 # If target is smaller, ignore right half
                 right = mid - 1
 
-        # If target not found, left will be the correct insert position
         return left
+        
+nums = [1, 3, 5, 6]
+target = 2
+
+obj = Solution()
+print(obj.searchInsert(nums, target))
