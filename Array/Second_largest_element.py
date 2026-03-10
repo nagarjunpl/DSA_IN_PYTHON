@@ -19,3 +19,6 @@ class Solution:
         else:
             print(second_largest)
         
+nums = [10, 20, 4, 45, 99]
+obj = Solution()
+obj.secondLargestElement(nums) # output: 45
