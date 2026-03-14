@@ -17,6 +17,5 @@ def inorder(root):
 root = TreeNode(6)
 root.left = TreeNode(4)
 root.right = TreeNode(1)
-
 print("Inorder Traversal:")
 inorder(root)
