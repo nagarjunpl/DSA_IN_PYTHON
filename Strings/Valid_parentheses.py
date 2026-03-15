@@ -4,11 +4,15 @@ class Solution:
         check = {')':'(', ']': '[', '}': '{'}
 
         for char in s:
-            if char in check:  # if it is a closing bracket
-                top = stack.pop() if stack else '#'  # get top of stack
+            if char in check:
+                top = stack.pop() if stack else '#'
                 if check[char] != top:
                     return False
             else:
-                stack.append(char)  # push opening bracket
+                stack.append(char)
         
-        return not stack  # valid if stack is empty
+        return not stack
+
+s = "{[]}"
+obj = Solution()
+print(obj.isValid(s)) # Output: True
