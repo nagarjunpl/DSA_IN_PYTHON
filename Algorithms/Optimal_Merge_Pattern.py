@@ -1,15 +1,19 @@
-n = int(input())                 # number of rocks
-rocks = list(map(int, input().split()))
+n = int(input())  # 4
+rocks = list(map(int, input().split())) # 4 3 2 6
 
 total = 0
 
-while len(rocks) > 1:            # until one rock remains
-    rocks.sort()                 # sort the rocks
-    a = rocks.pop(0)             # smallest rock
-    b = rocks.pop(0)             # second smallest
-    s = a + b
-    total += s                   # add effort
-    rocks.append(s)              # put new rock back
+while len(rocks) > 1:
+    rocks.sort()          # sort the list
 
-total += rocks[0]                # destroy final rock
-print(total)
+    a = rocks.pop(0)      # smallest
+    b = rocks.pop(0)      # second smallest
+
+    s = a + b             # merge cost
+    total += s
+    rocks.append(s)       # add back
+
+# add last remaining rock
+total += rocks[0]
+print(total) # Output : 44
+
