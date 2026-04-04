@@ -1,7 +1,7 @@
 # 🐍 DSA Problems in Python
 
 Welcome to my Data Structures and Algorithms (DSA) practice repository!  
-I am solving problems using **Python** to improve my coding skills and prepare for technical interviews.
+I am solving problems using **Python** to improve my coding skills.
 
 ---
 
@@ -9,8 +9,6 @@ I am solving problems using **Python** to improve my coding skills and prepare f
 
 Each folder contains problems grouped by topic.  
 Each `.py` file includes:
-- ✅ Problem name
-- ✅ Problem code in Python
 Example :
 
   ### Arrays Folder
