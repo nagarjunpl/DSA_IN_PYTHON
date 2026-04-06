@@ -11,4 +11,4 @@ class Solution:
         return nums[l]
 
 nums = [4, 5, 6, 7, -7, 1, 2, 3]
-print(Solution().findMin(nums))
+print(Solution().findMin(nums)) #Output : -7
