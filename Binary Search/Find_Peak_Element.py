@@ -7,8 +7,7 @@ class Solution:
                 l = m + 1
             else:
                 r = m
-
         return l
 
 arr = [-2, -1, 3, 4, 5]
-print(Solution().findPeakElement(arr)) #Output : ture
+print(Solution().findPeakElement(arr)) #Output : true
